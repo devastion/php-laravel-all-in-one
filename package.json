@@ -1,31 +1,10 @@
 {
   "name": "php-laravel-all-in-one",
   "displayName": "PHP / Laravel All in One",
-  "publisher": "devastion",
-  "description": "",
-  "icon": "assets/icon.png",
-  "author": {
-    "name": "Dimitar Banev",
-    "url": "https://github.com/devastion"
-  },
-  "license": "MIT",
-  "version": "0.0.0",
-  "engines": {
-    "vscode": "^1.87.0"
-  },
+  "version": "0.0.1",
+  "description": "VSCode extension pack, which includes all the essentials plugins to work with PHP and Laravel framework.",
   "categories": [
     "Extension Packs"
-  ],
-  "extensionPack": [
-    "bmewburn.vscode-intelephense-client",
-    "xdebug.php-debug",
-    "amiralizadeh9480.laravel-extra-intellisense",
-    "onecentlin.laravel-blade",
-    "codingyu.laravel-goto-view",
-    "naoray.laravel-goto-components",
-    "pgl.laravel-jump-controller",
-    "austenc.laravel-blade-spacer",
-    "ryannaddy.laravel-artisan"
   ],
   "bugs": {
     "url": "https://github.com/devastion/php-laravel-all-in-one/issues",
@@ -35,5 +14,36 @@
     "type": "git",
     "url": "git+https://github.com/devastion/php-laravel-all-in-one.git"
   },
-  "packageManager": "pnpm@9.0.6"
+  "license": "MIT",
+  "author": {
+    "name": "Dimitar Banev",
+    "url": "https://github.com/devastion"
+  },
+  "publisher": "devastion",
+  "scripts": {
+    "changeset": "changeset",
+    "publish": "vsce publish",
+    "version": "changeset version"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.0",
+    "@changesets/cli": "^2.27.1",
+    "@vscode/vsce": "^2.26.0"
+  },
+  "extensionPack": [
+    "amiralizadeh9480.laravel-extra-intellisense",
+    "austenc.laravel-blade-spacer",
+    "bmewburn.vscode-intelephense-client",
+    "codingyu.laravel-goto-view",
+    "naoray.laravel-goto-components",
+    "onecentlin.laravel-blade",
+    "pgl.laravel-jump-controller",
+    "ryannaddy.laravel-artisan",
+    "xdebug.php-debug"
+  ],
+  "packageManager": "pnpm@9.0.6",
+  "engines": {
+    "vscode": "^1.87.0"
+  },
+  "icon": "assets/icon.png"
 }

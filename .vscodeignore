@@ -1,0 +1,9 @@
+.gitignore
+.editorconfig
+
+# generated
+**/node_modules
+**/.DS_Store
+
+# secrets
+**/.env
