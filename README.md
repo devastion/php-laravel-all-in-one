@@ -41,6 +41,10 @@
 }
 ```
 
+You can check dockerized demo application [here](https://github.com/devastion/php-laravel-all-in-one/tree/main/laravel-todo-app).
+
+Refer to the extension's page for additional configurations.
+
 ## Requirements
 
 To use Intelephense intelligence you need to disable the built in PHP Language Server (Go to `Extensions` > search `@builtin php` > disable `PHP Language Features`) . For debugging you need to install Xdebug. Follow the [official guide](https://xdebug.org/docs/install).

@@ -1,7 +1,7 @@
 {
   "name": "php-laravel-all-in-one",
   "displayName": "PHP / Laravel All in One",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "VSCode extension pack, which includes all the essentials plugins to work with PHP and the Laravel framework.",
   "categories": [
     "Extension Packs"
