@@ -1,5 +1,11 @@
 # php-laravel-all-in-one
 
+## 0.0.3
+
+### Patch Changes
+
+- [`8e633d5`](https://github.com/devastion/php-laravel-all-in-one/commit/8e633d5364c19d391f0a49cc033b7d927054d7e2) Thanks [@devastion](https://github.com/devastion)! - Added extra (optional) laravel pint extension in README
+
 ## 0.0.2
 
 ### Patch Changes
