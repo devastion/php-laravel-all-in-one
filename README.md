@@ -28,12 +28,11 @@
     "LaravelExtraIntellisense.basePathForCode": "/var/www",
     "LaravelExtraIntellisense.phpCommand": "docker-compose exec -w /var/www/ php php -r \"{code}\"",
     // Laravel Blade Snippets
-    "emmet.triggerExpansionOnTab": true, // enable tab to expanse emmet tags
-    "blade.format.enable": true,         // if you would like to enable blade format
+    "blade.format.enable": true, // if you would like to enable blade format
     "[blade]": {
-        "emmet.triggerExpansionOnTab": true,
+        "emmet.triggerExpansionOnTab": true, // enable tab to expanse emmet tags
         "editor.autoClosingBrackets": "always",
-        "editor.defaultFormatter": "onecentlin.laravel-blade"
+        "editor.defaultFormatter": "onecentlin.laravel-blade" // use formatter for blade files
     },
     // Laravel Artisan (docker settings)
     "artisan.docker.enabled": true,
@@ -48,3 +47,16 @@ Refer to the extension's page for additional configurations.
 ## Requirements
 
 To use Intelephense intelligence you need to disable the built in PHP Language Server (Go to `Extensions` > search `@builtin php` > disable `PHP Language Features`) . For debugging you need to install Xdebug. Follow the [official guide](https://xdebug.org/docs/install).
+
+## Extra
+
+[**Laravel Pint**](https://marketplace.visualstudio.com/items?itemName=open-southeners.laravel-pint)
+
+```json
+{
+  "laravel-pint.enable": true,
+  "[php]": {
+    "editor.defaultFormatter": "open-southeners.laravel-pint"
+  }
+}
+```
