@@ -20,29 +20,24 @@
 
 ```json
 {
-  // Associate files with the right language
-  "files.associations": {
-    ".blade.php": "blade"
-  },
-  // PHP is validated from Intelephense
-  "php.suggest.basic": false,
-  "php.validate.enable": false,
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-  },
-  "emmet.includeLanguages": {
-    "blade": "html"
-  },
-  "blade.format.enable": true,
-  "[blade]": {
-    "emmet.triggerExpansionOnTab": true,
-    "editor.autoClosingBrackets": "always",
-    "editor.defaultFormatter": "onecentlin.laravel-blade"
-  },
-  // Enable if using docker
-  "artisan.docker.enabled": true,
-  // Run inside container (php is the name of the php service)
-  "artisan.docker.command": "docker-compose exec php"
+    // PHP Intelephense (optional settings)
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    },
+    // Laravel Extra Intellisense (docker settings)
+    "LaravelExtraIntellisense.basePathForCode": "/var/www",
+    "LaravelExtraIntellisense.phpCommand": "docker-compose exec -w /var/www/ php php -r \"{code}\"",
+    // Laravel Blade Snippets
+    "emmet.triggerExpansionOnTab": true, // enable tab to expanse emmet tags
+    "blade.format.enable": true,         // if you would like to enable blade format
+    "[blade]": {
+        "emmet.triggerExpansionOnTab": true,
+        "editor.autoClosingBrackets": "always",
+        "editor.defaultFormatter": "onecentlin.laravel-blade"
+    },
+    // Laravel Artisan (docker settings)
+    "artisan.docker.enabled": true,
+    "artisan.docker.command": "docker-compose exec php" // php is the name of docker-compose service
 }
 ```
 

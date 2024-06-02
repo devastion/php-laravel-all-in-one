@@ -2,7 +2,7 @@
   "name": "php-laravel-all-in-one",
   "displayName": "PHP / Laravel All in One",
   "version": "0.0.1",
-  "description": "VSCode extension pack, which includes all the essentials plugins to work with PHP and Laravel framework.",
+  "description": "VSCode extension pack, which includes all the essentials plugins to work with PHP and the Laravel framework.",
   "categories": [
     "Extension Packs"
   ],
@@ -41,7 +41,6 @@
     "ryannaddy.laravel-artisan",
     "xdebug.php-debug"
   ],
-  "packageManager": "pnpm@9.0.6",
   "engines": {
     "vscode": "^1.87.0"
   },

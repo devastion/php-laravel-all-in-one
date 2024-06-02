@@ -1,5 +1,7 @@
+# repository configuration
 .gitignore
 .editorconfig
+laravel-todo-app
 
 # generated
 **/node_modules
