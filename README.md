@@ -17,12 +17,15 @@
 | **Laravel Goto Controller**    | [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/pgl.laravel-jump-controller)](https://marketplace.visualstudio.com/items?itemName=pgl.laravel-jump-controller)                                 | [![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/stars/pgl.laravel-jump-controller)](https://marketplace.visualstudio.com/items?itemName=pgl.laravel-jump-controller)                                 | [![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/pgl.laravel-jump-controller)](https://marketplace.visualstudio.com/items?itemName=pgl.laravel-jump-controller)                                 |
 | **Laravel Blade Spacer**       | [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/austenc.laravel-blade-spacer)](https://marketplace.visualstudio.com/items?itemName=austenc.laravel-blade-spacer)                               | [![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/stars/austenc.laravel-blade-spacer)](https://marketplace.visualstudio.com/items?itemName=austenc.laravel-blade-spacer)                               | [![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/austenc.laravel-blade-spacer)](https://marketplace.visualstudio.com/items?itemName=austenc.laravel-blade-spacer)                               |
 | **Laravel Artisan**            | [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/ryannaddy.laravel-artisan)](https://marketplace.visualstudio.com/items?itemName=ryannaddy.laravel-artisan)                                     | [![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/stars/ryannaddy.laravel-artisan)](https://marketplace.visualstudio.com/items?itemName=ryannaddy.laravel-artisan)                                     | [![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/ryannaddy.laravel-artisan)](https://marketplace.visualstudio.com/items?itemName=ryannaddy.laravel-artisan)                                     |
+| **Laravel Pint**            | [![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/open-southeners.laravel-pint)](https://marketplace.visualstudio.com/items?itemName=open-southeners.laravel-pint)                                     | [![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/stars/open-southeners.laravel-pint)](https://marketplace.visualstudio.com/items?itemName=open-southeners.laravel-pint)                                     | [![Visual Studio Marketplace Downloads](https://img.shields.io/visual-studio-marketplace/d/open-southeners.laravel-pint)](https://marketplace.visualstudio.com/items?itemName=open-southeners.laravel-pint)                                     |
+
 
 ```json
 {
-    // PHP Intelephense (optional settings)
+    // PHP Formatter bmewburn.vscode-intelephense-client or
+    "laravel-pint.enable": true,
     "[php]": {
-        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+        "editor.defaultFormatter": "open-southeners.laravel-pint"
     },
     // Laravel Extra Intellisense (docker settings)
     "LaravelExtraIntellisense.basePathForCode": "/var/www",
@@ -47,16 +50,3 @@ Refer to the extension's page for additional configurations.
 ## Requirements
 
 To use Intelephense intelligence you need to disable the built in PHP Language Server (Go to `Extensions` > search `@builtin php` > disable `PHP Language Features`) . For debugging you need to install Xdebug. Follow the [official guide](https://xdebug.org/docs/install).
-
-## Extra
-
-[**Laravel Pint**](https://marketplace.visualstudio.com/items?itemName=open-southeners.laravel-pint)
-
-```json
-{
-  "laravel-pint.enable": true,
-  "[php]": {
-    "editor.defaultFormatter": "open-southeners.laravel-pint"
-  }
-}
-```
