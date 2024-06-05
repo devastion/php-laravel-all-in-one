@@ -1,13 +1,10 @@
 {
   "name": "php-laravel-all-in-one",
   "displayName": "PHP / Laravel All in One",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "VSCode extension pack, which includes all the essentials plugins to work with PHP and the Laravel framework.",
   "categories": [
-    "Debuggers",
-    "Formatters",
-    "Linters",
-    "Programming Languages"
+    "Extension Packs"
   ],
   "bugs": {
     "url": "https://github.com/devastion/php-laravel-all-in-one/issues",
@@ -48,7 +45,8 @@
     "pgl.laravel-jump-controller",
     "ryannaddy.laravel-artisan",
     "open-southeners.laravel-pint",
-    "xdebug.php-debug"
+    "xdebug.php-debug",
+    "neilbrayfield.php-docblocker"
   ],
   "engines": {
     "vscode": "^1.87.0"

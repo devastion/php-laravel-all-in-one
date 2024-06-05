@@ -23,3 +23,14 @@ services:
             - .docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
         depends_on:
             - php
+
+    db:
+        image: postgres:16
+        ports:
+            - "5432:5432"
+        volumes:
+            - .docker/db/data:/var/lib/postgresql/data
+        environment:
+            - POSTGRES_USER=laravel-todo-app-user
+            - POSTGRES_PASSWORD=laravel-todo-app-pwd
+            - POSTGRES_DB=laravel-todo-app

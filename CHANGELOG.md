@@ -1,5 +1,17 @@
 # php-laravel-all-in-one
 
+## 0.1.1
+
+### Patch Changes
+
+- Add PHP DocBlocker extension
+
+## 0.1.0
+
+### Minor Changes
+
+- Added laravel pint to the pack and changed default formatter settings to laravel pint.
+
 ## 0.0.3
 
 ### Patch Changes
